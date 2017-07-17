@@ -6,6 +6,7 @@ public class TestRun {
 		// TODO Auto-generated method stub
 		int result = Fibonacci.getValue(6);
 		System.out.print(result);
+
 	}
 
 }
