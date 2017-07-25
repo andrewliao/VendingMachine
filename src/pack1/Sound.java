@@ -7,6 +7,10 @@ public class Sound {
 		dist = 7.2 * 1100;
 		
 		System.out.println("The lighting is " + dist + " feet away.");
-		
+	
+		int i = 100;
+		byte k = (byte) i;
+		System.out.println(k);
 	}
+	
 }
