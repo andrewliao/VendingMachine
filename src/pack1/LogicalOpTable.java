@@ -27,16 +27,22 @@ public class LogicalOpTable {
 		System.out.print((p&q)+ "\t" + (p|q) + "\t");
 		System.out.println((p^q) + "\t" + (!p));
 		
-		/*
-		int x = 0;
+		int x = 3;
 		int y = 4;
-		if (x == 0) {
-			y = 6;
-		}
-		y = 6;
-		
+		Person a = new Person();
+		a.setLastName("Ma");
+		int z = test1(x, y, a);
+		System.out.println(x);
 		System.out.println(y);
-		
-		*/
+		System.out.println(a.getLastName());
+	}
+	
+	private static int test1(int x, int y, Person p) {
+		x = x*x;
+		y = y*y;
+		p.setLastName("Liao");
+		p = new Person();
+		p.setLastName("Winters");
+		return x+y;
 	}
 }

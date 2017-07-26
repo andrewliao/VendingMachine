@@ -2,7 +2,7 @@ package pack1;
 
 public class PrimeNum {
 	public static void main(String[] args) {
-		for (int i = 3; i < 100; i++) {
+		for (int i = 3; i < 1000; i++) {
 			int count = 0;
 			//this is to find if the number is prime
 			for (int j =2; j < i; j++) {
