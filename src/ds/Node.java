@@ -2,7 +2,7 @@ package ds;
 
 public class Node {
 	private Object storage;
-	private Node point;
+	private Node next, prev;
 	
 	public Object getStorage() {
 		return storage;
@@ -10,10 +10,16 @@ public class Node {
 	public void setStorage(Object storage) {
 		this.storage = storage;
 	}
-	public Node getPoint() {
-		return point;
+	public Node getNext() {
+		return next;
 	}
-	public void setPoint(Node point) {
-		this.point = point;
+	public void setNext(Node next) {
+		this.next = next;
+	}
+	public Node getPrev() {
+		return prev;
+	}
+	public void setPrev(Node prev) {
+		this.prev = prev;
 	}
 }

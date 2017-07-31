@@ -2,7 +2,7 @@ package ds;
 
 public class Stack {
 	
-	private Nodes start = null;
+	private Node tail = null;
 	
 	public static void main(String[] args) {
 		Stack test = new Stack();
@@ -18,23 +18,23 @@ public class Stack {
 	}
 	
 	public void putObject(Object object) {
-		Nodes creation = new Nodes();
-		creation.setStore(object);
-		if (start != null) {
-			creation.setPointing(start);
+		Node creation = new Node();
+		creation.setStorage(object);
+		if (tail != null) {
+			creation.setPrev(tail);
 		} 
-		start = creation;
+		tail = creation;
 		
 	}
 	
 	public Object getObject() {
-		Nodes finish = new Nodes();
-		finish = start;
-		if (start.getPointing() != null) {
-			start = start.getPointing();
+		Node finish = new Node();
+		finish = tail;
+		if (tail.getPrev() != null) {
+			tail = tail.getPrev();
 		} else {
-			start = null;
+			tail = null;
 		}
-		return finish.getStore();
+		return finish.getStorage();
 	}
 }

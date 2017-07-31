@@ -1,7 +1,9 @@
+package vendingmachine;
 
-public class Soda{
-	private static double cost = 2.00;
-	private static int stock = 20;
+public class Candy{
+	private static double cost = 1.00;
+	private static int stock = 15;
+	
 	
 	public static double getCost() {
 		return cost;

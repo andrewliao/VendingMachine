@@ -26,7 +26,7 @@ public class Queue {
 			start = test;
 		}
 		if (end != null) {
-			end.setPoint(test);
+			end.setNext(test);
 		}
 		end = test;
 		
@@ -37,7 +37,7 @@ public class Queue {
 		returning = start;
 		
 		if (end != null) {
-			start = start.getPoint();
+			start = start.getNext();
 		} else {
 			start = null;
 		}
