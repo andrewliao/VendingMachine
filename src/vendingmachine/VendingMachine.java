@@ -11,8 +11,7 @@ public class VendingMachine {
 			intro();
 
 			//entering a correct input, trying to input the first choice
-			char choice = 'a', deleting = 'b';
-			choice = input(console, choice, deleting);
+			char choice = input(console);
 			money(choice);
 	}
 	
@@ -24,9 +23,10 @@ public class VendingMachine {
 	}
 	
 	
-	public static char input(Scanner console, char choice, char deleting) 
+	public static char input(Scanner console) 
 	throws java.io.IOException {
 		//entering a correct input
+		char choice, deleting;
 				do {
 					choice = (char) System.in.read();
 					do {
