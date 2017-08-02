@@ -5,12 +5,6 @@ public class Node {
 	private Node left;
 	private Node right;
 	
-	 public Node() {
-		data = 0;
-		left = null;
-		right = null;
-	}
-	
 	public Node(int n) {
 		data = n;
 		left = null;
