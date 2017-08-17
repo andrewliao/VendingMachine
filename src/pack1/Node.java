@@ -1,9 +1,13 @@
-package pack1;
+                      package pack1;
 
 public class Node {
 	private int data;
 	private Node left;
 	private Node right;
+	
+	public Node() {
+		data = 0;
+	}
 	
 	public Node(int n) {
 		data = n;
@@ -11,6 +15,9 @@ public class Node {
 		right = null;
 	}
 	
+	public void setData(int n) {
+		this.data = n;
+	}
 	public int getData() {
 		return this.data;
 	}
